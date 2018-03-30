@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <!--  Theme Css -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <title>Demo HTML</title>
+  </head>
+  <body>
+ 
+<div class="container py-5">
+<div class="row">
+  <div class="col-md-8">
+  <h6>Code implementation Guide</h6>
+  <h1>Get started with code</h1>
+  <h4>Einrichtung = SDK + Siegelcode</h4>
+  <section class="pt-5 pb-3 mb-5 border-bottom">
+    <h1>Anleitung</h1>
+	<p>Um ein Siegel zu platzieren müssen sie das SDK laden und den Siegelcode an den
+stellen Ihrer Wahl platzieren.</p>
+<h5 class="mb-3">In this guide:</h5>
+<ul>
+<li>Get and copy the ad code</li>
+<li>Where to place the ad code in your HTML</li>
+<li>Paste the ad code in your page</li>
+<li>Common issues with ad code implementation</li>
+ </ul>
+  
+  </section>
+    <section class="pb-3 increment">
+    <h1 class="pt-3 pb-5">Badge Generieren</h1>
+	<h5 class="font-weight-bold">Code einmal einfügen</h5>
+	<p>Laden Sie diesen Code in ihrem HTML oder am Ende des.
+Das Skript wir asynchron ausgeführt um Ihre Ladegeschwindigkeit nicht zu beeinflussen und das Rendern der
+Seite nicht zu blockieren.</p>
+<p>Achten Sie darauf das Ihre ID richtig ist. dieses finden sie am ende des Skripts. Vermutlich ist diese bereits
+richtig. Falls Sie Ihre ID nicht kennen ist diese im Persönliche Daten kasten oben in diesesm Dokument.</p>
+
+<div class="p-4 bg-gray mb-5">
+<pre><code>&lt;script type="text/javascript" id="peats-sdk-loading"&gt;
+;(function(global, peatsUrl) {
+ global.p_peats_url = peatsUrl
+ function async_load() {
+ if (document.getElementById("PeatsSDK")) return
+ var script = document.createElement("script")
+ var element = document.getElementById("peats-sdk-loading")
+ script.type = "text/javascript"
+ script.id = "PeatsSDK"
+ script.async = true
+ script.src = peatsUrl + "/badges/peats-sdk.js"
+ element.parentNode.insertBefore(script, element)
+ }
+ window.addEventListener("load", async_load, false)
+})(this, "https://peats.de")&lt;/script&gt;</code></pre>
+</div>
+
+  
+  </section>
+  <section class="pb-3 mb-5 increment">    
+	<h5 class="font-weight-bold">Art des Badges</h5>
+	<p class="mb-5">Nachdem Sie den Code (oben) eingebunden haben können Sie so viele Siegel platzieren wie Sie
+möchten. Wählen Sie aus der unteren Liste das Siegel ihrer wahl, kopieren Sie den Code und platzieren
+Sie ihn auf Ihrere Website. Der Code des Snippets wird den Siegel-Tag finden und den richtigen Code
+dort platzieren.<p>
+
+<h4 class="font-weight-bold mb-3">Fixed Siegel</h4>
+<img src="assets/images/peats-partner.jpg" alt="Peats partners">
+<p class="mt-3">Dieses Siegel ist fixed auf Ihrer seite in der unten rechten ecke. Sie müssen diesen Siegelcode nur
+einemal einbinden.</p>
+
+<h4 class="mb-3 sub-title">Code</h3>
+<div class="p-4 bg-gray mb-5 border-bottom">
+<pre><code>&lt;divname="peats-badge" height="200px" width="37px" data-badgetype="fixed"
+data-peats-id="33"&gt;&lt;div&gt;</code></pre>
+</div>
+
+<h4 class="font-weight-bold mb-3">Name</h4>
+<img src="assets/images/peats-partner-small.jpg" alt="Peats partners">
+<p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+dolore magna aliqua. 
+Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. </p>
+
+<h4 class="mb-3 sub-title">Code</h4>
+<div class="p-4 bg-gray mb-5">
+<pre><code>&lt;divname="peats-badge" height="200px" width="37px" data-badgetype="fixed"
+data-peats-id="33"&gt;&lt;div&gt;</code></pre>
+</div>
+
+<h4 class="font-weight-bold mb-3">Name</h4>
+<img src="assets/images/peats-partner-icon.jpg" alt="Peats partners">
+<p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+dolore magna aliqua. enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore </p>
+
+<h4 class="mb-3 sub-title">Code</h4>
+<div class="p-4 bg-gray mb-5">
+<pre><code>&lt;divname="peats-badge" height="200px" width="37px" data-badgetype="fixed"
+data-peats-id="33"&gt;&lt;div&gt;</code></pre>
+</div>
+
+<h4 class="font-weight-bold mb-3">Name</h4>
+<img src="assets/images/peats-partner.jpg" alt="Peats partners">
+<p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+
+<h4 class="mb-3 sub-title">Code</h4>
+<div class="p-4 bg-gray mb-5">
+<pre><code>&lt;divname="peats-badge" height="200px" width="37px" data-badgetype="fixed"
+data-peats-id="33"&gt;&lt;div&gt;</code></pre>
+</div>
+
+<h1 class="mb-3">Variables</h1>
+<p>Ut enim ad minim veniam. "uid": "abcdef12345" Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod 
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, recipient
+adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+<div class="mb-5">
+<h4 class="mb-3 pt-2 sub-title">Height</h4>
+<div class="p-4 bg-gray">
+<pre><code>&lt;height="200px"&gt;</code></pre>
+</div>
+<p>The height property is used to set the maximum height of the container. The image will scale 
+proportionally untill it hits the maximum height or width. </p>
+</div>
+
+<div class="mb-5">
+<h4 class="mb-3 sub-title">Width</h4>
+<div class="p-4 bg-gray">
+<pre><code>&lt;height="200px"&gt;</code></pre>
+</div>
+<p>The height property is used to set the maximum height of the container. The image will scale 
+proportionally untill it hits the maximum height or width. </p>
+</div>
+
+<div class="mb-5">
+<h4 class="mb-3 sub-title">Height</h4>
+<div class="p-4 bg-gray">
+<pre><code>&lt;height="200px"&gt;</code></pre>
+</div>
+<p>The height property is used to set the maximum height of the container. The image will scale 
+proportionally untill it hits the maximum height or width. </p>
+</div>
+
+<div class="mb-5">
+<h4 class="mb-3 sub-title">data-peats-id</h4>
+<div class="p-4 bg-gray">
+<pre><code>&lt;height="200px"&gt;</code></pre>
+</div>
+<p>The height property is used to set the maximum height of the container. The image will scale 
+proportionally untill it hits the maximum height or width. </p>
+</div>
+
+<div class="mb-5">
+<h4 class="font-weight:bold mb-2 sub-title">data-badge-id</h4>
+<div class="p-4 bg-gray">
+<pre><code>&lt;height="200px"&gt;</code></pre>
+</div>
+<p>The height property is used to set the maximum height of the container. The image will scale 
+proportionally untill it hits the maximum height or width. </p>
+</div>
+
+  </section>
+  </div>
+  <div class="col-md-4">
+	  <div class="p-4 bg-gray mb-5">
+			<h2 class="mb-2 right-title-bar">Persönliche Daten</h2>
+			<h4 class="color-gray">ID sha256$cb90fed</h4>
+	  </div>
+	  <div class="mb-5">
+	        <h4 class="mb-4 sub-title">Code implementation Guide</h4>
+			 <ul class="data-list" style="list-style-type:none;">
+                 <li><a href="#">Anleitung</a></li>
+                 <li><a href="#">Badge Generieren
+                    <ul class="sub-data-list" style="list-style-type:none;">
+                         <li><a href="#">Code einmal einfügen</a></li>
+                         <li><a href="#">Art des Badges</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="#">Badge arten</a></li>
+				<li><a href="#">Variables</a></li>
+             </ul> 
+	  </div>
+  </div>
+</div>
+</div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+  </body>
+</html>
