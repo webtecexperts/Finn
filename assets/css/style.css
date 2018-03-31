@@ -97,6 +97,25 @@ li::before {
  color:#fff;
 }
 */
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}.fa-angle-down:before {
+    content: "\f107";
+    top: 5px;
+    margin-top: 4px;
+    position: relative;
+}
 
+@media only screen and (max-width:768px){
+	/* .container.bg-white.p-4.cblock {
+    padding: 0px !important;
+} */
+.Einleitung h1.p-4.mb-4, .Einleitung h3 {
+    padding: 0px !important;
+}
+.cblock button{float:left; margin-top:5px;}
+}
 
 
